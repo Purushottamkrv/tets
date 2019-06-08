@@ -1,0 +1,6 @@
+framework module Pods_InstaFitness {
+  umbrella header "Pods-InstaFitness-umbrella.h"
+
+  export *
+  module * { export * }
+}

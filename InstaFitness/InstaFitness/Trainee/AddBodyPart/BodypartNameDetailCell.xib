@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BodyPartNameDetailTVC" rowHeight="85" id="5jM-8A-WyU" customClass="BodyPartNameDetailTVC" customModule="InstaFitness" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5jM-8A-WyU" id="fGn-vl-azH">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biceps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rba-co-14q">
+                        <rect key="frame" x="20" y="20" width="54.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSX-GL-vyb">
+                        <rect key="frame" x="226" y="16.5" width="120" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRK-Ko-gxS">
+                                <rect key="frame" x="0.0" y="-0.5" width="25" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="01g-to-gRg"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1200.00 Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvf-Tf-0Ra">
+                                <rect key="frame" x="25" y="0.0" width="95" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yvf-Tf-0Ra" secondAttribute="trailing" id="1jQ-tf-O7o"/>
+                            <constraint firstItem="gRK-Ko-gxS" firstAttribute="leading" secondItem="rSX-GL-vyb" secondAttribute="leading" id="LVp-GL-FuU"/>
+                            <constraint firstAttribute="bottom" secondItem="yvf-Tf-0Ra" secondAttribute="bottom" id="WWd-ac-I8E"/>
+                            <constraint firstAttribute="bottom" secondItem="gRK-Ko-gxS" secondAttribute="bottom" id="b9k-JW-8hT"/>
+                            <constraint firstItem="yvf-Tf-0Ra" firstAttribute="leading" secondItem="gRK-Ko-gxS" secondAttribute="trailing" id="dbE-fc-YVR"/>
+                            <constraint firstItem="yvf-Tf-0Ra" firstAttribute="top" secondItem="rSX-GL-vyb" secondAttribute="top" id="mIb-fp-k2H"/>
+                            <constraint firstAttribute="width" constant="120" id="pnm-1x-89O"/>
+                            <constraint firstItem="gRK-Ko-gxS" firstAttribute="top" secondItem="rSX-GL-vyb" secondAttribute="top" id="qZc-x2-Oar"/>
+                            <constraint firstAttribute="height" constant="30" id="tSb-Ek-Uz3"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target : Muscles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-jg-fnU">
+                        <rect key="frame" x="20" y="46.5" width="100" height="20"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.69019607839999997" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3Q4-OV-Hws"/>
+                            <constraint firstAttribute="width" constant="100" id="Ofv-Us-3vS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="rSX-GL-vyb" secondAttribute="trailing" constant="20" id="HHZ-Fn-g58"/>
+                    <constraint firstItem="rSX-GL-vyb" firstAttribute="centerY" secondItem="Rba-co-14q" secondAttribute="centerY" id="NBN-VL-B4p"/>
+                    <constraint firstItem="Rba-co-14q" firstAttribute="leading" secondItem="fGn-vl-azH" secondAttribute="leading" constant="20" id="QhV-ZN-Ku3"/>
+                    <constraint firstItem="bjx-jg-fnU" firstAttribute="top" secondItem="Rba-co-14q" secondAttribute="bottom" constant="5" id="gLI-wD-B4e"/>
+                    <constraint firstItem="bjx-jg-fnU" firstAttribute="leading" secondItem="fGn-vl-azH" secondAttribute="leading" constant="20" id="mDt-cN-t16"/>
+                    <constraint firstItem="Rba-co-14q" firstAttribute="top" secondItem="fGn-vl-azH" secondAttribute="top" constant="20" id="ocQ-EQ-vOq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="31" y="36"/>
+        </tableViewCell>
+    </objects>
+</document>

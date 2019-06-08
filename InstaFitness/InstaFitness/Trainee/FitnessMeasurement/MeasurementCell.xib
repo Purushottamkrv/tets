@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="97" id="qZR-ch-dwx" customClass="MeasurementTVC" customModule="InstaFitness" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qZR-ch-dwx" id="CDP-py-IfU">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight (in Kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rka-Sl-z5S">
+                        <rect key="frame" x="20" y="20" width="358" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="30" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-y0-spq">
+                        <rect key="frame" x="20" y="46" width="348" height="16"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rka-Sl-z5S" firstAttribute="leading" secondItem="CDP-py-IfU" secondAttribute="leading" constant="20" id="3Fg-nu-aeJ"/>
+                    <constraint firstItem="AiM-y0-spq" firstAttribute="leading" secondItem="CDP-py-IfU" secondAttribute="leading" constant="20" id="7VL-fg-DwF"/>
+                    <constraint firstItem="AiM-y0-spq" firstAttribute="top" secondItem="rka-Sl-z5S" secondAttribute="bottom" constant="10" id="HR1-sI-BHx"/>
+                    <constraint firstAttribute="trailing" secondItem="AiM-y0-spq" secondAttribute="trailing" constant="10" id="Lac-sO-g39"/>
+                    <constraint firstAttribute="trailing" secondItem="rka-Sl-z5S" secondAttribute="trailing" id="Zd3-i4-63o"/>
+                    <constraint firstItem="rka-Sl-z5S" firstAttribute="top" secondItem="CDP-py-IfU" secondAttribute="top" constant="20" id="eOl-lV-IjH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="61" y="-29.5"/>
+        </tableViewCell>
+    </objects>
+</document>

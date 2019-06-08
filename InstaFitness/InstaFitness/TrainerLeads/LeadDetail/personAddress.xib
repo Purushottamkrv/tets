@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonAddressTVC" rowHeight="118" id="c8u-La-ezZ" customClass="PersonAddressTVC" customModule="InstaFitness" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c8u-La-ezZ" id="IBW-Th-Ms2">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oi-Aa-J8Q">
+                        <rect key="frame" x="20" y="16" width="59" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K-185/3 LGF Karan Palace,New Friends Colony New Delhi-25" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYR-R8-ozT">
+                        <rect key="frame" x="20" y="34" width="408" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EYR-R8-ozT" firstAttribute="leading" secondItem="IBW-Th-Ms2" secondAttribute="leading" constant="20" id="DsI-re-TP2"/>
+                    <constraint firstAttribute="trailing" secondItem="EYR-R8-ozT" secondAttribute="trailing" constant="5" id="TlK-0Y-LNS"/>
+                    <constraint firstItem="EYR-R8-ozT" firstAttribute="top" secondItem="1oi-Aa-J8Q" secondAttribute="bottom" id="YF1-e9-4Kb"/>
+                    <constraint firstItem="1oi-Aa-J8Q" firstAttribute="top" secondItem="IBW-Th-Ms2" secondAttribute="top" constant="16" id="mkl-7a-0vx"/>
+                    <constraint firstItem="1oi-Aa-J8Q" firstAttribute="leading" secondItem="IBW-Th-Ms2" secondAttribute="leading" constant="20" id="nnp-Fd-Ik2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="79.5" y="8"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViewAllReviewsTvCell" id="KGk-i7-Jjw" customClass="ViewAllReviewsTvCell" customModule="InstaFitness" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7J4-nx-IW9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="pIu-qo-6cM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="    View All Reviews"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROD-tG-acE">
+                        <rect key="frame" x="0.0" y="40" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-9A-gsN">
+                                <rect key="frame" x="30" y="23.5" width="46" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bL3-9F-fp3">
+                                <rect key="frame" x="190" y="1" width="100" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ere-xc-JWE"/>
+                                </constraints>
+                                <state key="normal" title="+ Add"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lrj-9A-gsN" firstAttribute="leading" secondItem="ROD-tG-acE" secondAttribute="leading" constant="30" id="40a-yQ-F4o"/>
+                            <constraint firstItem="bL3-9F-fp3" firstAttribute="bottom" secondItem="lrj-9A-gsN" secondAttribute="bottom" id="G0Z-Kw-5tu"/>
+                            <constraint firstItem="lrj-9A-gsN" firstAttribute="centerY" secondItem="ROD-tG-acE" secondAttribute="centerY" constant="8" id="TaX-LO-4GL"/>
+                            <constraint firstAttribute="height" constant="50" id="spH-YN-WrO"/>
+                            <constraint firstAttribute="trailing" secondItem="bL3-9F-fp3" secondAttribute="trailing" constant="30" id="vv2-y4-gn9"/>
+                            <constraint firstItem="bL3-9F-fp3" firstAttribute="height" secondItem="ROD-tG-acE" secondAttribute="height" constant="-8" id="ybK-Ie-LFl"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-6i-pmX">
+                        <rect key="frame" x="30" y="90" width="250" height="109.5"/>
+                        <string key="text">feedback occurs when an environment reacts to an action or behavior. For example, 'customer feedback' is the buyers' reaction to a firm's products and policies, and 'operational feedback' is the internally generated inf</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7J4-nx-IW9" secondAttribute="trailing" id="Bxs-KS-dDJ"/>
+                    <constraint firstAttribute="bottom" secondItem="1Lh-6i-pmX" secondAttribute="bottom" id="Cdg-0J-0wM"/>
+                    <constraint firstItem="ROD-tG-acE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="E9i-Fo-xgR"/>
+                    <constraint firstItem="1Lh-6i-pmX" firstAttribute="top" secondItem="ROD-tG-acE" secondAttribute="bottom" id="KD7-7I-e4j"/>
+                    <constraint firstAttribute="trailing" secondItem="1Lh-6i-pmX" secondAttribute="trailing" constant="40" id="NAb-s8-i8S"/>
+                    <constraint firstItem="ROD-tG-acE" firstAttribute="top" secondItem="7J4-nx-IW9" secondAttribute="bottom" id="W3Q-48-0aI"/>
+                    <constraint firstAttribute="trailing" secondItem="ROD-tG-acE" secondAttribute="trailing" id="ajt-sE-wBI"/>
+                    <constraint firstItem="7J4-nx-IW9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eN0-1D-Cho"/>
+                    <constraint firstItem="7J4-nx-IW9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gbF-jT-Pio"/>
+                    <constraint firstItem="1Lh-6i-pmX" firstAttribute="leading" secondItem="lrj-9A-gsN" secondAttribute="leading" id="rWQ-yG-86e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addbtn_outlet" destination="bL3-9F-fp3" id="h36-Cl-n91"/>
+                <outlet property="discription_lbl" destination="1Lh-6i-pmX" id="KXl-2m-TTy"/>
+                <outlet property="viewallReviewbtn_outlet" destination="7J4-nx-IW9" id="RpQ-me-2JI"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="55"/>
+        </tableViewCell>
+    </objects>
+</document>
